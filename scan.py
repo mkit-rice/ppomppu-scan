@@ -22,7 +22,6 @@ with requests.Session() as s:
   first_page = s.get('http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu&search_type=sub_memo&keyword='+str(keyword))
   html = first_page.text
   soup = bs(html, 'html.parser')
-
   items = soup.select(
     '.list0 table a'
   )
