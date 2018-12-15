@@ -27,7 +27,7 @@ with requests.Session() as s:
   )
 
   # 첫글 번호 읽기
-  f = open("/Users/i2801/python/ppomppu/last.txt", 'r')
+  f = open("/Users/i2801/python/ppomppu-scan/last.txt", 'r')
   while True:
       line = f.readline()
       if not line: break
@@ -48,7 +48,7 @@ with requests.Session() as s:
 
   # 첫글 번호 저장
   if len(no) > 0:
-    f = open("/Users/i2801/python/ppomppu/last.txt", 'w')
+    f = open("/Users/i2801/python/ppomppu-scan/last.txt", 'w')
     f.write(no[0])
     f.close()
 
